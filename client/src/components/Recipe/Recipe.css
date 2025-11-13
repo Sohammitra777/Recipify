@@ -1,0 +1,36 @@
+.outerRecipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerRecipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+    padding: 1rem 2rem;
+    background-color: #f0efeb;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+.innerRecipe button {
+    color: #ffffff;
+    background-color: #d17557;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.innerRecipe button:hover {
+    color: #d17557;
+    background-color: #ffffff;
+}
+
+.innerRecipe button:active {
+    background-color: #d17557;
+    color: #ffffff;
+}

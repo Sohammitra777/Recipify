@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+form h3 {
+    text-align: center;
+    width: 100%
+}
+
+form > input{
+    flex-grow: 1;
+    border-radius: .5rem;
+    border-color: black;
+    max-width: 20rem;
+    min-width: 10rem;
+    padding: 1rem;
+}
+
+form > button{
+    font-family: Inter, sans-serif;
+    font-weight: 1rem;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: .3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: .15rem;
+    margin-right: .2rem;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
