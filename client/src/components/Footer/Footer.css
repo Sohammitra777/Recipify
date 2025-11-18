@@ -10,3 +10,8 @@ footer > a {
     color : white; 
     text-decoration: none;
 }
+
+footer > a:hover{
+    color: #F6EFD2; 
+    transition: .5s ease;
+}
