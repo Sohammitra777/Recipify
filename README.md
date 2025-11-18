@@ -93,7 +93,7 @@ Dependencies can be viewed directly inside the `package.json` folder of client a
 
 ## Screenshots
 
-![Heading and Form Field](./client/public/first.png) 
+![Heading and Form Field](./client/public/firstone.png) 
 ![Ingredient List and Get Recipe](./client/public/Second.png)
 ![Recipe](./client/public/Third.png)
 
