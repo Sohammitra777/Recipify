@@ -1,9 +1,10 @@
 import "./Header.css"
+import image from "../../assets/chef-hat-svgrepo-com.svg"
 
 function Header(){
     return (
         <header>
-            <img src="src\assets\chef-svgrepo-com.svg" alt="Chef Image" />
+            <img src={image} alt="Chef Image" />
             <h3>Recipify</h3>
         </header>
     );
