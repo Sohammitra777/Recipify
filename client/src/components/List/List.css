@@ -1,5 +1,8 @@
 section {
     margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 ul {
@@ -10,4 +13,15 @@ ul {
 
 li {
     margin-top: 1rem;
+}
+
+section > button{
+    font-family: Inter, sans-serif;
+    font-weight: 1rem;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: .3rem;
+    padding: 1rem;
+    cursor: pointer;
 }

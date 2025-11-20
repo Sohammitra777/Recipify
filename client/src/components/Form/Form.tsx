@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks";
 
 function Form() {
     const [ingredient, setIngredient] = useState("");
-    const len = useAppSelector((state) => state.ingredient.list.length);
+    const len = useAppSelector((state) => state.ingredient.list.length); 
     const dispatch = useAppDispatch();
 
     const handleClick = () => {

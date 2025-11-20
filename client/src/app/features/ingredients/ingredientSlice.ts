@@ -23,6 +23,10 @@ const userIngredient = createSlice({
         addUserIngredient: (state, action) => {
             state.list.push(action.payload);
         },
+        reset: (state) => {
+            state.list = [], 
+            state.recipe = ""
+        }
     },
     extraReducers: (builder) => {
         builder
@@ -41,5 +45,5 @@ const userIngredient = createSlice({
 });
 
 const userIngredientReducer = userIngredient.reducer;
-export const { addUserIngredient } = userIngredient.actions;
+export const { addUserIngredient, reset } = userIngredient.actions;
 export default userIngredientReducer;
