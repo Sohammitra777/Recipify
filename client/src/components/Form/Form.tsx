@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks";
 
 function Form() {
     const [ingredient, setIngredient] = useState("");
-    const len = useAppSelector((state) => state.ingredient.list.length); 
+    const len = useAppSelector((state) => state.ingredient.list.length);
     const dispatch = useAppDispatch();
 
     const handleClick = () => {
@@ -19,6 +19,7 @@ function Form() {
                     `Need minimum ${5 - len} ingredient to make a Recipe`}
             </h3>
             <input
+                aria-label="Ingredient Name"
                 required
                 type="text"
                 value={ingredient}
