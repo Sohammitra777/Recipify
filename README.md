@@ -2,7 +2,7 @@
 
 ## Description
 
-Recipyfy is an AI-powered recipe generator that creates cooking instructions based on the ingredients you provide. By leveraging a simple React frontend and an Express backend, it showcases how AI APIs can be integrated into a modern web application. The project focuses on learning and understanding the React ecosystem, backend fundamentals, and end‑to‑end app structure.
+Recipify is an AI-powered recipe generator that creates cooking instructions based on the ingredients you provide. By leveraging a simple React frontend and an Express backend, it showcases how AI APIs can be integrated into a modern web application. The project focuses on learning and understanding the React ecosystem, backend fundamentals, and end‑to‑end app structure.
 
 ## Project Vision / Next Steps
 
@@ -16,11 +16,11 @@ This project was created to deepen understanding of:
 
 ### Next Step
 
-The long‑term vision is to evolve Recipyfy into a full‑fledged shopping application built using:
+The long‑term vision is to make a full‑fledged shopping application built using:
 
 * **TypeScript + React**
 * **Redux Toolkit**
-* **Prisma**
+* **Prisma or Drizzle**
 * **MongoDB or PostgreSQL**
 
 ## Features
