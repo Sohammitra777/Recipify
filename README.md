@@ -1,4 +1,4 @@
-# Recipyfy
+# Recipify
 
 ## Description
 
