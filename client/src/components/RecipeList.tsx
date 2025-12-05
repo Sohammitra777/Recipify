@@ -4,7 +4,7 @@ import { useAppSelector } from "../app/hooks";
 function RecipeList() {
     const recipe = useAppSelector((state) => state.ingredient.recipe);
     return (
-        <section className="ml-10 mr-10">
+        <section className="ml-10 mr-10 grow">
             <ReactMarkdown
                 components={{
                     h1: ({ node, ...props }) => (

@@ -5,7 +5,7 @@ function Recipe() {
     const ingredient = useAppSelector((state) => state.ingredient);
     const dispatch = useAppDispatch();
     return (
-        <div>
+        <div className="grow">
             {ingredient.list.length > 4 && (
                 <div className="mt-2 mr-8 ml-8 p-4 bg-[#f0efeb] rounded-xl flex items-center">
                     <div className="grow">

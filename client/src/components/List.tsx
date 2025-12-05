@@ -4,7 +4,7 @@ function List() {
     const list = useAppSelector((state) => state.ingredient.list);
 
     return (
-        <section className="ml-7 mt-2 sm:mt-4">
+        <section className="ml-7 mt-2 sm:mt-4 grow">
             <h1 className="text-xl sm:text-3xl font-medium">
                 {list.length > 0 && "Ingredients on Hand"}
             </h1>

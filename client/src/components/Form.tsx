@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { addUserIngredient, reset } from "../app/features/ingredients/ingredientSlice";
+import {
+    addUserIngredient,
+    reset,
+} from "../app/features/ingredients/ingredientSlice";
 import { useAppDispatch, useAppSelector } from "../app/hooks";
 
 function Form() {
@@ -10,7 +13,7 @@ function Form() {
 
     const handleClick = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const ingri = ingredient.charAt(0).toUpperCase() + ingredient.slice(1); 
+        const ingri = ingredient.charAt(0).toUpperCase() + ingredient.slice(1);
         if (!/^[A-Za-z]+$/.test(ingri)) return;
         dispatch(addUserIngredient(ingri));
         setIngredient("");
@@ -19,9 +22,9 @@ function Form() {
     return (
         <form
             onSubmit={handleClick}
-            className="flex flex-row justify-center items-center flex-wrap gap-4 sm:gap-3"
+            className="flex flex-row justify-center items-center flex-wrap gap-4 sm:gap-3 grow"
         >
-            <h3 className="mt-4 text-center text-md sm:text-2xl w-full">
+            <h3 className="mr-4 ml-4 text-center font-medium text-lg sm:text-2xl w-full">
                 {len < 5 &&
                     `Need minimum ${5 - len} ingredient to make a Recipe`}
             </h3>
@@ -39,14 +42,12 @@ function Form() {
             <button className="p-2 pl-4 pr-4 sm:p-[.4rem] sm:pl-4 sm:pr-4 bg-black text-white rounded-lg hover:bg-white hover:text-black hover:border-2 cursor-pointer duration-300 ease-in">
                 Add Ingredient
             </button>
-            {list.length > 0 && (
-                <button
-                    className="p-2 pl-4 pr-4 sm:p-[.4rem] sm:pl-4 sm:pr-4 bg-black text-white rounded-lg hover:bg-white hover:text-black hover:border-2 cursor-pointer duration-300 ease-in"
-                    onClick={() => dispatch(reset())}
-                >
-                    Reset
-                </button>
-            )}
+            <button
+                className="p-2 pl-4 pr-4 sm:p-[.4rem] sm:pl-4 sm:pr-4 bg-black text-white rounded-lg hover:bg-white hover:text-black hover:border-2 cursor-pointer duration-300 ease-in"
+                onClick={() => dispatch(reset())}
+            >
+                Reset
+            </button>
         </form>
     );
 }
