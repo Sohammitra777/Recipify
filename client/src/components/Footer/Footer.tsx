@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer(){
     return (
-        <footer>
+        <footer className='mt-auto'>
             <a href="https://github.com/Sohammitra777/Recipify" target='blank'>GitHub & Code</a>
             <a href="https://www.linkedin.com/in/soham-mitra-a73b782b3/" target='blank'>Linked-In</a>
             <a href="mailto:soham.business777@gamil.com" target='blank'>Email</a>

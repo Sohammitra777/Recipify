@@ -1,6 +1,1 @@
-html,
-body {
-    margin: 0;
-    font-family: Inter, sans-serif;
-    background-color: #fafaf8;
-}
+@import "tailwindcss";
