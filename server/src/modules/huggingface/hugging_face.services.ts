@@ -1,7 +1,5 @@
 import { InferenceClient } from "@huggingface/inference";
-import { configDotenv } from "dotenv";
-
-configDotenv();
+import  "dotenv/config";
 
 const hf = new InferenceClient(process.env.HF_ACCESS_TOKEN);
 
@@ -14,7 +12,6 @@ RULES:
 - ONLY return simple markdown headings, lists, and paragraphs.
 - DO NOT escape characters like \\n.
 `;
-
 
 export default async function generateRecipe(ingredients: string[]) {
     try {
@@ -31,14 +28,14 @@ export default async function generateRecipe(ingredients: string[]) {
             temperature: 0.3,
         });
 
-        let content = response.choices[0].message.content || "";
-        content = content
+        const contentResponse = response.choices[0].message.content || "";
+        const contentStructure = contentResponse
             .replace(/<think>[\s\S]*?<\/think>/g, "")
             .replace(/&lt;/g, "<")
             .replace(/&gt;/g, ">")
             .trim();
 
-        return content;
+        return contentStructure;
     } catch (err) {
         console.error("Error generating recipe:", err);
         throw new Error("Failed to generate recipe");
