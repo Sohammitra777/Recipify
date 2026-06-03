@@ -16,8 +16,7 @@ RULES:
 export default async function generateRecipe(ingredients: string[]) {
     try {
         const response = await hf.chatCompletion({
-            model: "Qwen/Qwen3-32B",
-            provider: "cerebras",
+            model: process.env.HF_MODEL!,
             messages: [
                 {
                     role: "user",

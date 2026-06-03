@@ -10,7 +10,7 @@ interface ingredientState {
 
 
 const initialState: ingredientState = {
-    list: [],
+    list: ["lettus", "breast", "tortilla", "veggies", "sauses"],
     recipe : "", 
     loading: false, 
     error: null
